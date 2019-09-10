@@ -5,9 +5,10 @@ public class arrayChallenges
 
 		public static void main(String[] args)
 			{
-				//fiveRandomNumbers();
 				//sweet();
-				eigthNumbers();
+				//eigthNumbers();
+				fiveRandomNumbers();
+
 			}
 
 		private static void sweet()
@@ -39,43 +40,60 @@ public class arrayChallenges
 
 		private static void eigthNumbers()
 			{
-				System.out.println("Please enter one of eigth numbers");
 				
 				Scanner intInput = new Scanner(System.in);
-				
-				int userNumbers = intInput.nextInt();
+			
 				
 				int [] eightNumbers = new int[8];
-				
-				for (int i = 0; i < 7; i++)
-					{
-						System.out.println("Enter your next number");
-						
-						eightNumbers[i] = intInput.nextInt();
-					}
 				
 				int evenSum = 0;
 				int oddSum = 0;
 				
-				if (userNumbers % 2 == 0)
+				for (int i = 0; i < 8; i++)
 					{
-						evenSum += userNumbers;
+						System.out.println("Enter your number");
+
+						int userNumbers = intInput.nextInt();
+						
+						eightNumbers[i] = userNumbers;
+						
+						
+						if (userNumbers % 2 == 0)
+							{
+								evenSum += eightNumbers[i];
+							}
+						else  
+							{
+								oddSum += eightNumbers[i];
+							}
+
+						
 					}
-				else  
-					{
-						oddSum += userNumbers;
-					}
+
 				System.out.println("The sum of all your even numbers is: " + evenSum);
-				System.out.println("The sum of all your even numbers is: " + oddSum);
-
-
-
+				System.out.println("The sum of all your odd numbers is: " + oddSum);
 			}
 		
 
 		private static void fiveRandomNumbers()
-			{
+			{								
+				int [] randomNumbers = new int[5];
 				
+				for (int i = 0; i < 5; i++)
+					{
+						int randomNumber = (int) (Math.random()* 90 + 10);
+					
+							randomNumbers[i] = randomNumber;
+						
+							System.out.println(randomNumber);
+							
+							for (int i = 5; i >= 1; i--)
+								{
+									
+								}
+					}				
+
+
 			}
 
 
