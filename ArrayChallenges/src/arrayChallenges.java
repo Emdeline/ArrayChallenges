@@ -5,8 +5,8 @@ public class arrayChallenges
 
 		public static void main(String[] args)
 			{
-				//sweet();
-				//eigthNumbers();
+				sweet();
+				eigthNumbers();
 				fiveRandomNumbers();
 
 			}
@@ -87,11 +87,12 @@ public class arrayChallenges
 						
 							System.out.println(randomNumber);
 							
-							for (int i = 5; i >= 1; i--)
-								{
-									
-								}
-					}				
+					}
+				
+				for (int i = 4; i >= 0; i--)
+					{
+						System.out.println(randomNumbers[i]);
+					}
 
 
 			}
